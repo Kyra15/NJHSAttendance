@@ -13,7 +13,8 @@
     <link rel="stylesheet" href="styles.css" />
     <script src="https://unpkg.com/feather-icons@4.28.0/dist/feather.min.js"></script>
   </head>
-  <body>   
+  <body> 
+    <button onclick="topFunction()" id="topBtn" title="Go to top">Top</button>  
     <section>
       <!-- MOBILE NAVIGATION -->
       <div class="w3-container w3-padding-16 w3-border-bottom w3-hide-medium w3-hide-large">
@@ -43,7 +44,7 @@
               <div class="" style="font-weight: 300;">
                 <p>Name: Kyra Movva</p>
                 <p>Email: pl251201@ahschool.com or kyra.movva@gmail.com</p>
-                <a class="w3-button w3-round-xxlarge w3-large w3-sand" href="https://replit.com/@Kyra15/NJHSAttendence" target="_blank"><b>Code Link!</b></a> 
+                <a class="w3-button w3-round-xxlarge w3-large w3-sand" href="https://replit.com/@Kyra15/NJHSAttendence" target="_blank"><b>Link to Code on Github!</b></a> 
               </div>
             </div>
       </section>
@@ -120,44 +121,44 @@
             <h2 class="w3-border-bottom w3-border-amber" style="border-width: 3px !important;">STUDENT LIST</h2>
             <div class="w3-container w3-margin-top-2 w3-cursive">
 
-              <!--EMPLOYMENT HISTORY SECTION-->
+              <!-- STUDENT NAMES LIST INPUT -->
               <h3 class="w3-border-amber">Student List Input:</h3>
               <div class="">
                 <h5>(Copy and paste names into here and click submit when done)</h5>
                 <form id="form_stud">
-                  <textarea name="stud" id="stud" style="text-align:left"></textarea>
+                  <textarea id="stud" style="text-align:left"></textarea>
+                  <!-- <p id="text">Text</p> -->
                   <p><input type="submit" value="Submit" id="submitBtn"></p>
                 </form>
               </div>
             </div>
 
-            <!---EDUCATION SECTION-->
+          <!---PROGRAM INPUT-->
+          <div id="program" class="w3-container w3-margin-top-10-percent w3-cursive">
+            <h2 class="w3-border-bottom w3-border-amber" style="border-width: 3px !important;">PROGRAM</h2>
             <div class="w3-container w3-margin-top-2 w3-cursive">
-              <h3 class="w3-border-amber">MY EDUCATION</h3>
-                <h4>College diploma, College of management, Houston</h4>
-                <p>October 2008 - July 2013 </p>
-                <h4>Highschool diploma, XYZ Highschool, Houston</h4>
-                <p>October 2004 - July 2008 </p>
-            </div>
+              <h4>Drag and drop the file into here: </h4>
+              <input type="file" id="myFile" name="filename">
+          </div>
 
-            <!--SKILLS SECTION-->
-            <div class="w3-container w3-margin-top-2 w3-cursive">
-              <h3 class="w3-border-amber">MY SKILLS</h3>
-              <!--SOFT SKILLS-->
-              <h4>Soft skills</h4>
+          <!--SKILLS SECTION-->
+          <div class="w3-container w3-margin-top-2 w3-cursive">
+            <h3 class="w3-border-amber">MY SKILLS</h3>
+            <!--SOFT SKILLS-->
+            <h4>Soft skills</h4>
+            <ul class="w3-ul" style="font-weight: 500;">
+              <li>I have excelent communication skill and confidence in front of an audience</li>
+              <li>I have a talent for investigating and researching different processes to offer different improvements and solution for the benefit of the organization </li>
+              <li>Provided engaging text, image and video content for all social media and professional accounts</li>
+            </ul>
+            <!--TECHNICAL SKILLS-->
+            <h4>Technical skills</h4>
               <ul class="w3-ul" style="font-weight: 500;">
-                <li>I have excelent communication skill and confidence in front of an audience</li>
-                <li>I have a talent for investigating and researching different processes to offer different improvements and solution for the benefit of the organization </li>
+                <li>I have a great experience with MS Office tools</li>
+                <li>I am proficient in technical writing</li>
                 <li>Provided engaging text, image and video content for all social media and professional accounts</li>
               </ul>
-              <!--TECHNICAL SKILLS-->
-              <h4>Technical skills</h4>
-                <ul class="w3-ul" style="font-weight: 500;">
-                  <li>I have a great experience with MS Office tools</li>
-                  <li>I am proficient in technical writing</li>
-                  <li>Provided engaging text, image and video content for all social media and professional accounts</li>
-                </ul>
-            </div>
+          </div>
 
           <!--FOOTER-->
           <!-- Footer. This section contains an ad for W3Schools Spaces. You can leave it to support us. -->
@@ -185,5 +186,6 @@
       // Script to load feather icons
       feather.replace()
     </script>
+    <script src="script.js"></script>
   </body>
 </html>
