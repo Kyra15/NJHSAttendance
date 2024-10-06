@@ -23,9 +23,23 @@ body * {
 
   textarea {
         overflow-y: scroll;
-        height: 100px;
+        height: 300px;
+        width: 90%;
         resize: none; /* Remove this if you want the user to resize the textarea */
     }
+
+  topBtn {
+  display: none;
+  position: fixed;
+  bottom: 20px;
+  right: 30px;
+  z-index: 99;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  padding: 15px;
+  border-radius: 4px;
+}
 
   .center {
   display: block;
