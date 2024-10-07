@@ -8,13 +8,14 @@
     <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet" href="https://pyscript.net/releases/2022.12.1/pyscript.css" />
+    <script defer src="https://pyscript.net/releases/2022.12.1/pyscript.js"></script>
     <!--Montserrat font-->
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="styles.css" />
     <script src="https://unpkg.com/feather-icons@4.28.0/dist/feather.min.js"></script>
   </head>
   <body> 
-    <button onclick="topFunction()" id="topBtn" title="Go to top">Top</button>  
     <section>
       <!-- MOBILE NAVIGATION -->
       <div class="w3-container w3-padding-16 w3-border-bottom w3-hide-medium w3-hide-large">
@@ -22,9 +23,10 @@
         <a href="javascript:void(0)" class="w3-bar-item w3-button w3-right w3-hide-large w3-hide-medium" onclick="toggleNavigation()">&#9776;</a>
       </div>
       <div id="mobile-nav" class="w3-bar-block w3-hide w3-hide-large w3-hide-medium w3-sticky">
-        <a href="#instruct" class="w3-bar-item w3-button w3-center w3-hover-none w3-border-white w3-bottombar w3-hover-border-green w3-hover-text-green" onclick="toggleNavigation()">Instructions</a>
-        <a href="#student_list" class="w3-bar-item w3-button w3-center w3-hover-none w3-border-white w3-bottombar w3-hover-border-green w3-hover-text-green" onclick="toggleNavigation()">Student List</a>
-        <a href="#program" class="w3-bar-item w3-button w3-center w3-hover-none w3-border-white w3-bottombar w3-hover-border-green w3-hover-text-green" onclick="toggleNavigation()">Program</a>
+        <a href="#home" class="w3-bar-item w3-button w3-center w3-hover-none w3-border-white w3-bottombar w3-hover-border-amber w3-hover-text-amber" onclick="toggleNavigation()">Home</a>
+        <a href="#instruct" class="w3-bar-item w3-button w3-center w3-hover-none w3-border-white w3-bottombar w3-hover-border-amber w3-hover-text-amber" onclick="toggleNavigation()">Instructions</a>
+        <a href="#student_list" class="w3-bar-item w3-button w3-center w3-hover-none w3-border-white w3-bottombar w3-hover-border-amber w3-hover-text-amber" onclick="toggleNavigation()">Student List</a>
+        <a href="#program" class="w3-bar-item w3-button w3-center w3-hover-none w3-border-white w3-bottombar w3-hover-border-amber w3-hover-text-amber" onclick="toggleNavigation()">Program</a>
       </div>
 
       <!-- SOCIAL SECTION -->
@@ -52,11 +54,11 @@
       <!--CV CONTENT SECTION-->
       <section class="w3-threequarter w3-padding-large w3-right">
         <!--DESKTOP NAVIGATION-->
-        <div class="w3-container w3-padding-large w3-border-bottom w3-hide-small">
-          <a href="#home" class="w3-bar-item w3-button w3-hover-none w3-border-white w3-bottombar w3-hover-border-green">Home</a>
-          <a href="#program" class="w3-bar-item w3-button w3-hover-none w3-border-white w3-bottombar w3-hover-border-green w3-hover-text-green w3-right w3-hide-small" style="border-width: 2px !important;" onclick="toggleNavigation()">Program</a>
-          <a href="#student_list" class="w3-bar-item w3-button w3-hover-none w3-border-white w3-bottombar w3-hover-border-green w3-hover-text-green w3-right w3-hide-small" style="border-width: 2px !important;" onclick="toggleNavigation()">Student List</a>
-          <a href="#instruct" class="w3-bar-item w3-button w3-hover-none w3-border-white w3-bottombar w3-hover-border-green w3-hover-text-green w3-right w3-hide-small" style="border-width: 2px !important;" onclick="toggleNavigation()">Instructions</a>
+        <div id='desktopnavbar' class="w3-container w3-padding-large w3-border-grey w3-light-grey w3-hide-small w3-sticky">
+          <a href="#home" class="w3-bar-item w3-button w3-hover-none w3-border-grey w3-bottombar w3-hover-border-amber" style="border-width: 2px !important;">Home</a>
+          <a href="#program" class="w3-bar-item w3-button w3-hover-none w3-border-grey w3-bottombar w3-hover-border-amber w3-right w3-hide-small" style="border-width: 2px !important;" onclick="toggleNavigation()">Program</a>
+          <a href="#student_list" class="w3-bar-item w3-button w3-hover-none w3-border-grey w3-bottombar w3-hover-border-amber w3-right w3-hide-small" style="border-width: 2px !important;" onclick="toggleNavigation()">Student List</a>
+          <a href="#instruct" class="w3-bar-item w3-button w3-hover-none w3-border-grey w3-bottombar w3-hover-border-amber w3-right w3-hide-small" style="border-width: 2px !important;" onclick="toggleNavigation()">Instructions</a>
         </div>
           <!--HOME SECTION-->
           <div id="home" class="home w3-container w3-margin-top-4 w3-cursive">
@@ -140,6 +142,8 @@
             <div class="w3-container w3-margin-top-2 w3-cursive">
               <h4>Drag and drop the file into here: </h4>
               <input type="file" id="myFile" name="filename">
+              <p><input type="submit" value="Process" id="programBtn"></p> 
+              <py-script src="./test.py"></py-script>
             </div>
           </div>
 

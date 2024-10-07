@@ -13,3 +13,4 @@ const saveToLocalStorage = (e) => {
 }
 
 button.addEventListener('click', saveToLocalStorage)
+
